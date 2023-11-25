@@ -5,12 +5,18 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from '../app.component';
 import { FooterComponent } from '../components/main/footer/footer.component';
 import { HeaderComponent } from '../components/main/header/header.component';
+import { SubMenuComponent } from '../components/main/sub-menu/sub-menu.component';
+import { MobileHeaderComponent } from '../components/main/mobile-header/mobile-header.component';
+import { MenuComponent } from '../components/main/menu/menu.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
+    SubMenuComponent,
+    MobileHeaderComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
