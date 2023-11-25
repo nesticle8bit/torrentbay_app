@@ -8,6 +8,7 @@ import { HeaderComponent } from '../components/main/header/header.component';
 import { SubMenuComponent } from '../components/main/sub-menu/sub-menu.component';
 import { MobileHeaderComponent } from '../components/main/mobile-header/mobile-header.component';
 import { MenuComponent } from '../components/main/menu/menu.component';
+import { SearchComponent } from '../views/search/search.component';
 
 @NgModule({
   declarations: [
@@ -16,13 +17,14 @@ import { MenuComponent } from '../components/main/menu/menu.component';
     FooterComponent,
     SubMenuComponent,
     MobileHeaderComponent,
-    MenuComponent
+    MenuComponent,
+    SearchComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
